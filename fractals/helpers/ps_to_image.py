@@ -9,17 +9,15 @@ import glob
 import shutil
 from pathlib import Path
 import turtle
-from pdf2image import convert_from_path
+from pdf2image import convert_from_path # this library is a poppler wrapper
 
 BASE_FOLDER = os.path.dirname(os.path.realpath(__file__))
-PARENT_FOLDER = os.path.dirname(BASE_FOLDER)
-POSTSCRIPT_FOLDER = f"{PARENT_FOLDER}/postscripts"
-IMAGE_FOLDER = f"{PARENT_FOLDER}/images"
 TEMP_FOLDER = f"{BASE_FOLDER}/pleaseignorethistempfolder"
 PS_EXT = ".eps"
 PDF_EXT = ".pdf"
 PNG_EXT = ".png"
 FPS = 12
+SIZE = 720, 720
 
 def convert_ps_to_png(ps_file : str) -> str:
     """uses PIL Image library to convert postscript to png"""
@@ -78,19 +76,41 @@ def generate_image_list(folder : str, ext = PS_EXT) -> list:
     if ext == PDF_EXT:
         imagelist = [convert_from_path(file_name)[0] for file_name in 
                 sorted(cleanup_folder(folder, ext = ext))]
-        imagelist[-1].show()
         return imagelist
 
     return [Image.open(file_name) for file_name in 
             sorted(cleanup_folder(folder, ext = ext))]
 
+def crop_square(image : Image) -> Image:
+    """
+    returns cropped image of middle square of image
+    """
 
+    width, height = image.size
+    if width == height:
+        return image
+    elif width < height:
+        return image.crop((0,
+                           (height - width) / 2,
+                           width,
+                           (width + height) / 2))
+    else:
+        return image.crop(((width - height) / 2,
+                           0,
+                           (height + width) / 2,
+                           height))
 
-def make_gif(draw : Callable, name : str, out_file : str):
+def make_gif(draw : Callable, name : str, out_file : str, 
+             square : bool = False, compressed : bool = True):
     """
     combines images in postscript folder as frames of gif
     assumes images are sorted
     """
+
+    assert out_file.endswith(".gif"), f"{out_file} must be gif"
+
+    if os.path.exists(TEMP_FOLDER):
+        shutil.rmtree(TEMP_FOLDER)
 
     Path(TEMP_FOLDER).mkdir(parents = True, exist_ok = False)
     drawing_is_running = True
@@ -98,7 +118,8 @@ def make_gif(draw : Callable, name : str, out_file : str):
     def save(interval : int, folder : str, index : int):
         """saves turtle screen every interval as postscript file to folder"""
         if drawing_is_running:
-            turtle.getcanvas().postscript(file = "{0}/{1}{2:04d}{3}".format(folder, name, index, PS_EXT))
+            turtle.getcanvas().postscript(file = "{0}/{1}{2:04d}{3}" \
+                                .format(folder, name, index, PS_EXT))
             index += 1
             turtle.ontimer(lambda: save(interval, folder, index), interval)
 
@@ -108,9 +129,15 @@ def make_gif(draw : Callable, name : str, out_file : str):
     drawing_is_running = False
 
     convert_all_ps(TEMP_FOLDER, TEMP_FOLDER, filetype = "PDF")
-    print("if it got here, we didn't heck it up")
 
     images = generate_image_list(TEMP_FOLDER, ext = PDF_EXT)
+    if square:
+        images = [crop_square(image) for image in images]
+
+    if compressed:
+        for im in images:
+            im.thumbnail(SIZE, Image.ANTIALIAS)
+
     images[0].save(out_file, 
                    save_all = True, 
                    append_images = images[1:], 
@@ -145,8 +172,3 @@ def convert_all_ps(postscript_folder : str, image_folder : str,
     for file_path in image_paths:
         new_path = image_folder + "/" + os.path.basename(file_path)
         shutil.move(file_path, new_path)
-
-
-if __name__ == "__main__":
-    convert_all_ps(POSTSCRIPT_FOLDER, IMAGE_FOLDER)
-    convert_all_ps(POSTSCRIPT_FOLDER, IMAGE_FOLDER, filetype = "pdf")
