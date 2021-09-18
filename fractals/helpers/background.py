@@ -8,7 +8,6 @@ at least not like this.
 
 import turtle
 from turtle import Screen, Turtle
-from time import sleep
 
 def draw_gradient_bkg(color1, color2, width, height, 
                       vertical = True, resolution = 1):
@@ -54,4 +53,3 @@ def draw_gradient_bkg(color1, color2, width, height,
 
     turtle.update()
     turtle.tracer(1,10)
-    sleep(3)
