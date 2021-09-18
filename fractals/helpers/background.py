@@ -55,6 +55,3 @@ def draw_gradient_bkg(color1, color2, width, height,
     turtle.update()
     turtle.tracer(1,10)
     sleep(3)
-
-if __name__ == "__main__":
-    draw_gradient_bkg((1,0,0),(0,1,1),200,200, resolution = 10)
