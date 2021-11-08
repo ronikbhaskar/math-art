@@ -121,10 +121,10 @@ class DimStar(Celestial):
 
     def __init__(self, x, y):
         super().__init__(x, 
-                        y, 
-                        DimStar.WIDTH, 
-                        DimStar.HEIGHT, 
-                        DimStar.DRAWINGS)
+                         y, 
+                         DimStar.WIDTH, 
+                         DimStar.HEIGHT, 
+                         DimStar.DRAWINGS)
 
 class BrightStar(Celestial):
 
@@ -133,10 +133,10 @@ class BrightStar(Celestial):
 
     def __init__(self, x, y):
         super().__init__(x, 
-                        y, 
-                        BrightStar.WIDTH, 
-                        BrightStar.HEIGHT, 
-                        BrightStar.DRAWINGS)
+                         y, 
+                         BrightStar.WIDTH, 
+                         BrightStar.HEIGHT, 
+                         BrightStar.DRAWINGS)
     
 class BrightStarVariant(Celestial):
 
@@ -145,10 +145,10 @@ class BrightStarVariant(Celestial):
 
     def __init__(self, x, y):
         super().__init__(x, 
-                        y, 
-                        BrightStarVariant.WIDTH, 
-                        BrightStarVariant.HEIGHT, 
-                        BrightStarVariant.DRAWINGS)
+                         y, 
+                         BrightStarVariant.WIDTH, 
+                         BrightStarVariant.HEIGHT, 
+                         BrightStarVariant.DRAWINGS)
     
 class BigPlanet(Celestial):
 
@@ -157,10 +157,10 @@ class BigPlanet(Celestial):
 
     def __init__(self, x, y):
         super().__init__(x, 
-                        y, 
-                        BigPlanet.WIDTH, 
-                        BigPlanet.HEIGHT, 
-                        BigPlanet.DRAWINGS)
+                         y, 
+                         BigPlanet.WIDTH, 
+                         BigPlanet.HEIGHT, 
+                         BigPlanet.DRAWINGS)
     
 class SmallPlanet(Celestial):
 
@@ -169,10 +169,10 @@ class SmallPlanet(Celestial):
 
     def __init__(self, x, y):
         super().__init__(x, 
-                        y, 
-                        SmallPlanet.WIDTH, 
-                        SmallPlanet.HEIGHT, 
-                        SmallPlanet.DRAWINGS)
+                         y, 
+                         SmallPlanet.WIDTH, 
+                         SmallPlanet.HEIGHT, 
+                         SmallPlanet.DRAWINGS)
     
 class TwinklingStar(Celestial):
 
@@ -181,10 +181,10 @@ class TwinklingStar(Celestial):
 
     def __init__(self, x, y):
         super().__init__(x, 
-                        y, 
-                        TwinklingStar.WIDTH, 
-                        TwinklingStar.HEIGHT, 
-                        TwinklingStar.DRAWINGS)
+                         y, 
+                         TwinklingStar.WIDTH, 
+                         TwinklingStar.HEIGHT, 
+                         TwinklingStar.DRAWINGS)
 
 class FullMoon(Celestial):
 
@@ -197,10 +197,10 @@ class FullMoon(Celestial):
 
     def __init__(self, x, y):
         super().__init__(x, 
-                        y, 
-                        FullMoon.WIDTH, 
-                        FullMoon.HEIGHT, 
-                        FullMoon.DRAWINGS)
+                         y, 
+                         FullMoon.WIDTH, 
+                         FullMoon.HEIGHT, 
+                         FullMoon.DRAWINGS)
     
 class FirstQuarterMoon(Celestial):
 
@@ -213,10 +213,10 @@ class FirstQuarterMoon(Celestial):
 
     def __init__(self, x, y):
         super().__init__(x, 
-                        y, 
-                        FirstQuarterMoon.WIDTH, 
-                        FirstQuarterMoon.HEIGHT, 
-                        FirstQuarterMoon.DRAWINGS)
+                         y, 
+                         FirstQuarterMoon.WIDTH, 
+                         FirstQuarterMoon.HEIGHT, 
+                         FirstQuarterMoon.DRAWINGS)
     
 class LastQuarterMoon(Celestial):
 
@@ -229,10 +229,10 @@ class LastQuarterMoon(Celestial):
 
     def __init__(self, x, y):
         super().__init__(x, 
-                        y, 
-                        LastQuarterMoon.WIDTH, 
-                        LastQuarterMoon.HEIGHT, 
-                        LastQuarterMoon.DRAWINGS)
+                         y, 
+                         LastQuarterMoon.WIDTH, 
+                         LastQuarterMoon.HEIGHT, 
+                         LastQuarterMoon.DRAWINGS)
   
 class Meteor(Celestial):
 
@@ -280,10 +280,10 @@ class Meteor(Celestial):
 
     def __init__(self, x, y):
         super().__init__(x, 
-                        y, 
-                        Meteor.WIDTH, 
-                        Meteor.HEIGHT, 
-                        Meteor._generate_drawings(randint(20,40)))
+                         y, 
+                         Meteor.WIDTH, 
+                         Meteor.HEIGHT, 
+                         Meteor._generate_drawings(randint(20,40)))
 
 if __name__ == "__main__":
     os.system("clear")
