@@ -2,6 +2,9 @@ import time
 import math
 from random import randint
 import os
+from datetime import datetime, timezone
+import getopt
+import sys
 
 class Sky():
     """
@@ -205,10 +208,10 @@ class FullMoon(Celestial):
 class FirstQuarterMoon(Celestial):
 
     DRAWINGS = [["     --.  ",
-                "     |_\\\ ",
-                "     |  O|",
-                "     |  / ",
-                "     --\"  "]]
+                 "     |_\\\ ",
+                 "     |  O|",
+                 "     |  / ",
+                 "     --\"  "]]
     WIDTH, HEIGHT = 10, 5
 
     def __init__(self, x, y):
@@ -221,10 +224,10 @@ class FirstQuarterMoon(Celestial):
 class LastQuarterMoon(Celestial):
 
     DRAWINGS = [["  ,--     ",
-                " / o|     ",
-                "| \_/     ",
-                " \ .|     ",
-                "  `--"]]
+                 " / o|     ",
+                 "| \_/     ",
+                 " \ .|     ",
+                 "  `--     "]]
     WIDTH, HEIGHT = 10, 5
 
     def __init__(self, x, y):
@@ -233,6 +236,22 @@ class LastQuarterMoon(Celestial):
                          LastQuarterMoon.WIDTH, 
                          LastQuarterMoon.HEIGHT, 
                          LastQuarterMoon.DRAWINGS)
+
+class NewMoon(Celestial):
+
+    DRAWINGS = [["          ",
+                 "          ",
+                 "          ",
+                 "          ",
+                 "          ",]]
+    WIDTH, HEIGHT = 10, 5
+
+    def __init__(self, x, y):
+        super().__init__(x, 
+                         y, 
+                         NewMoon.WIDTH, 
+                         NewMoon.HEIGHT, 
+                         NewMoon.DRAWINGS)
   
 class Meteor(Celestial):
 
@@ -285,7 +304,97 @@ class Meteor(Celestial):
                          Meteor.HEIGHT, 
                          Meteor._generate_drawings(randint(20,40)))
 
-if __name__ == "__main__":
+def get_moon_phase():
+    # I want to use integers, so
+    # period ~ 29.53059 days
+    # period * 100000 * 86400 s / day -> 
+    # period = 255144297600 # s / 100000 <- units
+    # dividing the period of the moon into 4 segments,
+    # phase_len = 63786074400 s / 100000
+    # to convert to ms, we multiply by 100
+    # because 1 / 100000 * 100 = 1 / 1000, so
+    phase_len_ms = 637860744
+    harvest_moon_2021 = datetime(2021, 9, 20, 23, 55, tzinfo=timezone.utc)
+    dt_now = datetime.now(tz=timezone.utc)
+    diff_ms = round((dt_now - harvest_moon_2021).total_seconds() * 1000)
+    # I know you shouldn't round multiple times in general when
+    # approximating a value, but I want to make sure the division
+    # is done with integers, since there is no maximum
+    # (long) integer size in Python
+    phase = round(diff_ms / phase_len_ms) % 4
+    return phase
+
+def usage():
+    """
+    prints simple usage information
+    """
+
+    print("\nSTARS.PY")
+    print("args:")
+    print("-p {phase} : optional, changes phase of moon, takes val 0-3")
+    print("\talias --phase")
+    print("\t0 : new moon")
+    print("\t1 : first quarter")
+    print("\t2 : full moon")
+    print("\t3 : last quarter")
+    print("\tdefault is the actual moon phase\n")
+    print("-t {phase} : optional, int between 0 and 10000, sets number of frames")
+    print("\talias --time")
+    print("\tdefaults to 10000\n")
+    print("-h : prints usage information")
+    print("\talias --help\n")
+
+def str_to_int_in_range(opt, arg, min, max):
+    """
+    converts string to int, min <= x < max
+    exits if fail (for use in arg parsing)
+    """
+
+    msg = f"{opt} takes an integer between {min} and {max - 1}"
+
+    try:
+        arg = int(arg)
+    except ValueError as err:
+        print(msg)
+        sys.exit(1)
+
+    if arg < min or arg >= max:
+        print(msg)
+        sys.exit(1)
+
+    return arg
+
+
+def main():
+    # C-style arg parse bc I want to 
+    try:
+        opts, args = getopt.getopt(sys.argv[1:], "t:p:h", ["time=","phase=","help"])
+    except getopt.GetoptError as err:
+        # print usage information and exit:
+        print(err) # option arg not recognized
+        usage()
+        sys.exit(1)
+    
+    phase = get_moon_phase()
+    time = 10000
+
+    for opt, arg in opts:
+        if opt in ("-p", "--phase"):
+            arg = str_to_int_in_range(opt, arg, 0, 4)
+            phase = (arg + 2) % 4
+        elif opt in ("-t", "--time"):
+            arg = str_to_int_in_range(opt, arg, 0, 10001)
+            time = arg
+        elif opt in ("-h", "--help"):
+            usage()
+            sys.exit(0)
+        else:
+            input(f"Unhandled option {arg}. Press ENTER to continue anyways")
+
+    # finished parsing args
+
+    moon_phases = [FullMoon, LastQuarterMoon, NewMoon, FirstQuarterMoon]
+    Moon = moon_phases[phase]
     os.system("clear")
     width, height = 80, 20
     sky = Sky(width, height)
@@ -296,9 +405,9 @@ if __name__ == "__main__":
         sky.add(BrightStarVariant(randint(0,width),randint(0,height)))
         # sky.add(TwinklingStar(randint(0,width),randint(0,height)))
     
-    sky.add(FirstQuarterMoon(14,0))
+    sky.add(Moon(14,0))
     # To change this to a different moon phase,
-    # replace FirstQuarterMoon with LastQuarterMoon or FullMoon.
+    # use arg -p with 0 for new moon, 1 for first quarter, 2 for full, 3 for last
     sky.add(BigPlanet(55,6))
     sky.add(SmallPlanet(75,10))
     sky.add(Meteor(0,0))
@@ -306,5 +415,7 @@ if __name__ == "__main__":
     sky.add(Meteor(37,4))
     sky.add(Meteor(41,8))
     sky.add(Meteor(41,3))
-    sky.run(10000)
+    sky.run(time)
 
+if __name__ == "__main__":
+    main()
