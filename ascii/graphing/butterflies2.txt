@@ -1,0 +1,504 @@
+                                                
+..uu.....,                            ......uu.,
+`]MMMMMMMbmu.,                    ..umdMMMMMMM7'
+ `]MMMMMMMMMMbmu,              .umdMMMMMMMMMM7' 
+  '4MMMMMMMMMMMMbu,          .udMMMMMMMMMMMMP'  
+   ]MMMMMMMMMMMMMMbu,      .udMMMMMMMMMMMMMM[   
+   `]MMMMMMMMMMMMMMML,    .]MMMMMMMMMMMMMMM7'   
+    '4MMMMMMMMMMMMMMML,  .]MMMMMMMMMMMMMMMP'    
+     ]MMMMMMMMMMMMMMMML,.]MMMMMMMMMMMMMMMM[     
+     `]MMMMMMMMMMMMMMMM[]MMMMMMMMMMMMMMMM7'     
+      '4MMMMMMMMMMMMMMM[]MMMMMMMMMMMMMMMP'      
+       `^^^^'****4MMMMML]MMMMMP****'^^^^'       
+       .....ummmmdMMMMM7]MMMMMbmmmmu....,       
+       ]MMMMMMMMMMMMMMM[]MMMMMMMMMMMMMMM[       
+       `]MMMMMMMMMMMMMM[]MMMMMMMMMMMMMM7'       
+        ]MMMMMMMMMMMMM7'`]MMMMMMMMMMMMM[        
+        ]MMMMMMMMMMMM7'  `]MMMMMMMMMMMM[        
+        ]MMMMMMMMMMM7'    `]MMMMMMMMMMM[        
+        '4MMMMMMMMP''      `'4MMMMMMMMP'        
+         ]MMMMMMP''          `'4MMMMMM[         
+         ]MMMP*''              `'*4MMM[         
+         '*'^'                    `^'*'         
+                                                
+                                                
+                                                
+   .,                                      .,   
+  .dbmmmmmu.,                      ..ummmmmdb,  
+  '4MMMMMMMMbmu.,              ..umdMMMMMMMMP'  
+   '4MMMMMMMMMMMbu,          .udMMMMMMMMMMMP'   
+    ]MMMMMMMMMMMMMbu,      .udMMMMMMMMMMMMM[    
+    `]MMMMMMMMMMMMMML,    .]MMMMMMMMMMMMMM7'    
+     ]MMMMMMMMMMMMMMML,  .]MMMMMMMMMMMMMMM[     
+     `]MMMMMMMMMMMMMMML,.]MMMMMMMMMMMMMMM7'     
+      '4MMMMMMMMMMMMMMM[]MMMMMMMMMMMMMMMP'      
+       '4MMMMMMMMMMMMMM[]MMMMMMMMMMMMMMP'       
+        `^^^^'***4MMMMML]MMMMMP***'^^^^'        
+        .....ummmdMMMMM7]MMMMMbmmmu....,        
+        ]MMMMMMMMMMMMMM[]MMMMMMMMMMMMMM[        
+        '4MMMMMMMMMMMMM[]MMMMMMMMMMMMMP'        
+         ]MMMMMMMMMMMM7'`]MMMMMMMMMMMM[         
+         ]MMMMMMMMMMM7'  `]MMMMMMMMMMM[         
+         ]MMMMMMMMMM7'    `]MMMMMMMMMM[         
+         ]MMMMMMMMP''      `'4MMMMMMMM[         
+         ]MMMMMMP''          `'4MMMMMM[         
+         ]MMP*'^'              `^'*4MM[         
+         ''^'                      `^''         
+                                                
+                                                
+                                                
+                                                
+   .uu.....,                        ......uu,   
+   '4MMMMMMbmu.,                ..umdMMMMMMP'   
+    ]MMMMMMMMMMbu,            .udMMMMMMMMMM[    
+    `]MMMMMMMMMMMbu,        .udMMMMMMMMMMM7'    
+     '4MMMMMMMMMMMMbu,    .udMMMMMMMMMMMMP'     
+      ]MMMMMMMMMMMMMML,  .]MMMMMMMMMMMMMM[      
+      `]MMMMMMMMMMMMMML,.]MMMMMMMMMMMMMM7'      
+       ]MMMMMMMMMMMMMMM[]MMMMMMMMMMMMMMM[       
+       `]MMMMMMMMMMMMMM[]MMMMMMMMMMMMMM7'       
+        `^^^^'****4MMMML]MMMMP****'^^^^'        
+         ....ummmmdMMMM7]MMMMbmmmmu...,         
+         ]MMMMMMMMMMMMM[]MMMMMMMMMMMMM[         
+         ]MMMMMMMMMMMMM[]MMMMMMMMMMMMM[         
+         '4MMMMMMMMMMM7'`]MMMMMMMMMMMP'         
+          ]MMMMMMMMMM7'  `]MMMMMMMMMM[          
+          ]MMMMMMMMP''    `'4MMMMMMMM[          
+          ]MMMMMMP''        `'4MMMMMM[          
+          ]MMMMP''            `'4MMMM[          
+          ]P*'^'                `^'*4[          
+          `'                        `'          
+                                                
+                                                
+                                                
+                                                
+     .,                                  .,     
+    .dbmmmmu..,                  ...ummmmdb,    
+    `]MMMMMMMMbu.,            ..udMMMMMMMM7'    
+     '4MMMMMMMMMMbu,        .udMMMMMMMMMMP'     
+      ]MMMMMMMMMMMMb,      .dMMMMMMMMMMMM[      
+      `]MMMMMMMMMMMMbu,  .udMMMMMMMMMMMM7'      
+       '4MMMMMMMMMMMMM[  ]MMMMMMMMMMMMMP'       
+        ]MMMMMMMMMMMMMb,.dMMMMMMMMMMMMM[        
+        '4MMMMMMMMMMMMM[]MMMMMMMMMMMMMP'        
+         `^^^'****4MMMML]MMMMP****'^^^'         
+         ....ummmmdMMMM7]MMMMbmmmmu...,         
+         `]MMMMMMMMMMMM[]MMMMMMMMMMMM7'         
+          ]MMMMMMMMMMMP''4MMMMMMMMMMM[          
+          ]MMMMMMMMMMM[  ]MMMMMMMMMMM[          
+          '4MMMMMMMMP''  `'4MMMMMMMMP'          
+           ]MMMMMMMP'      '4MMMMMMM[           
+           ]MMMMMP''        `'4MMMMM[           
+           ]MMP'^'            `^'4MM[           
+           `^^'                  `^^'           
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+     .uu....,                      .....uu,     
+     '4MMMMMbmmu,              .ummdMMMMMP'     
+      ]MMMMMMMMMbu.,        ..udMMMMMMMMM[      
+      `]MMMMMMMMMMML,      .]MMMMMMMMMMM7'      
+       `]MMMMMMMMMMMbu,  .udMMMMMMMMMMM7'       
+        ]MMMMMMMMMMMMM[  ]MMMMMMMMMMMMM[        
+        `]MMMMMMMMMMMMb,.dMMMMMMMMMMMM7'        
+         ]MMMMMMMMMMMMM[]MMMMMMMMMMMMM[         
+         `^^^'****4MMMML]MMMMP****'^^^'         
+          ...ummmmdMMMM7]MMMMbmmmmu..,          
+          '4MMMMMMMMMMM[]MMMMMMMMMMMP'          
+           ]MMMMMMMMMMP''4MMMMMMMMMM[           
+           ]MMMMMMMMMM[  ]MMMMMMMMMM[           
+           ]MMMMMMMMP''  `'4MMMMMMMM[           
+           ]MMMMMMM7'      `]MMMMMMM[           
+           `]MMMP'^'        `^'4MMM7'           
+            '**''              `'**'            
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+       .,                              .,       
+      .dbmmmmu.,                ..ummmmdb,      
+      `]MMMMMMMbmu,          .umdMMMMMMM7'      
+       `]MMMMMMMMMbu,      .udMMMMMMMMM7'       
+        '4MMMMMMMMMMb,    .dMMMMMMMMMMP'        
+         ]MMMMMMMMMMMb,  .dMMMMMMMMMMM[         
+         '4MMMMMMMMMMMb,.dMMMMMMMMMMMP'         
+          ]MMMMMMMMMMMM[]MMMMMMMMMMMM[          
+          `^^^'****4MMML]MMMP****'^^^'          
+           ...ummmmdMMM7]MMMbmmmmu..,           
+           ]MMMMMMMMMMM[]MMMMMMMMMMM[           
+           `]MMMMMMMMMP''4MMMMMMMMM7'           
+            ]MMMMMMMMP'  '4MMMMMMMM[            
+            ]MMMMMMMP'    '4MMMMMMM[            
+            ]MMMMMP''      `'4MMMMM[            
+            ]MMP*''          `'*4MM[            
+            ''^'                `^''            
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+       .uu....,                  .....uu,       
+       `]MMMMMbmu.,          ..umdMMMMM7'       
+        '4MMMMMMMMbu,      .udMMMMMMMMP'        
+         ]MMMMMMMMMMb,    .dMMMMMMMMMM[         
+         `]MMMMMMMMMMb,  .dMMMMMMMMMM7'         
+          '4MMMMMMMMMMb,.dMMMMMMMMMMP'          
+           ]MMMMMMMMMMM[]MMMMMMMMMMM[           
+           `^^'****4MMML]MMMP****'^^'           
+            ..ummmmdMMM7]MMMbmmmmu.,            
+            ]MMMMMMMMMM[]MMMMMMMMMM[            
+            ]MMMMMMMMMP''4MMMMMMMMM[            
+            `]MMMMMMMP'  '4MMMMMMM7'            
+             ]MMMMMMP'    '4MMMMMM[             
+             ]MMMMP''      `'4MMMM[             
+             ]P*'^'          `^'*4[             
+             `'                  `'             
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+         .,                          .,         
+         Gbmmmmu.,            ..ummmmdD         
+         ]MMMMMMMbu,        .udMMMMMMM[         
+         `]MMMMMMMMbu,    .udMMMMMMMM7'         
+          '4MMMMMMMMMb,  .dMMMMMMMMMP'          
+           ]MMMMMMMMMMb,.dMMMMMMMMMM[           
+           `]MMMMMMMMMM[]MMMMMMMMMM7'           
+            `^'****4MMML]MMMP****'^'            
+             .ummmmdMMM7]MMMbmmmmu,             
+             ]MMMMMMMMM[]MMMMMMMMM[             
+             ]MMMMMMMMP''4MMMMMMMM[             
+             ]MMMMMMMP'  '4MMMMMMM[             
+             `]MMMMP''    `'4MMMM7'             
+              ]MMP''        `'4MM[              
+              ''^'            `^''              
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+         .uu....,              .....uu,         
+         `]MMMMMbu.,        ..udMMMMM7'         
+          `]MMMMMMMbu,    .udMMMMMMM7'          
+           '4MMMMMMMML,  .]MMMMMMMMP'           
+            ]MMMMMMMMML,.]MMMMMMMMM[            
+            '4MMMMMMMMM[]MMMMMMMMMP'            
+             `^'****4MML]MMP****'^'             
+             ..ummmmdMM7]MMbmmmmu.,             
+             `]MMMMMMMM[]MMMMMMMM7'             
+              ]MMMMMMM7'`]MMMMMMM[              
+              ]MMMMMM7'  `]MMMMMM[              
+              ]MMMMP''    `'4MMMM[              
+              ]MP'^'        `^'4M[              
+              `^'              `^'              
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+           .,                      .,           
+           ]bmmmu.,          ..ummmd[           
+           '4MMMMMbu,      .udMMMMMP'           
+            ]MMMMMMMbu,  .udMMMMMMM[            
+            `]MMMMMMMML,.]MMMMMMMM7'            
+             ]MMMMMMMMM[]MMMMMMMMM[             
+             `^'****4MML]MMP****'^'             
+              .ummmmdMM7]MMbmmmmu,              
+              '4MMMMMMM[]MMMMMMMP'              
+               ]MMMMMM7'`]MMMMMM[               
+               ]MMMMP''  `'4MMMM[               
+               ]MMP''      `'4MM[               
+               ''^'          `^''               
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+            .u...,            ....u,            
+            ]MMMMbmu,      .umdMMMM[            
+            `]MMMMMMbu,  .udMMMMMM7'            
+             '4MMMMMMML,.]MMMMMMMP'             
+              ]MMMMMMMM[]MMMMMMMM[              
+              `'****4MML]MMP****''              
+               .mmmmdMM7]MMbmmmm,               
+               ]MMMMMMM[]MMMMMMM[               
+               '4MMMMM7'`]MMMMMP'               
+                ]MMMP''  `'4MMM[                
+                ]P*''      `'*4[                
+                `'            `'                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+             .,                  .,             
+             ]bmmmu.,      ..ummmd[             
+             `]MMMMMbu,  .udMMMMM7'             
+              ]MMMMMMML,.]MMMMMMM[              
+              `]MMMMMMM[]MMMMMMM7'              
+               `'***4MML]MMP***''               
+                .mmmdMM7]MMbmmm,                
+                ]MMMMMM[]MMMMMM[                
+                ]MMMMM7'`]MMMMM[                
+                ]MMMP''  `'4MMM[                
+                '*'^'      `^'*'                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+              .u...,        ....u,              
+              '4MMMbu,    .udMMMP'              
+               ]MMMMMbu,.udMMMMM[               
+               `]MMMMMM[]MMMMMM7'               
+                '****4ML]MP****'                
+                 vmmmdM7]Mbmmmr                 
+                 ]MMMMM[]MMMMM[                 
+                 ]MMMP''`'4MMM[                 
+                 ]MP''    `'4M[                 
+                 `^'        `^'                 
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+               .,              .,               
+               ]bmmu.,    ..ummd[               
+               `]MMMMb,  .dMMMM7'               
+                '4MMMMb,.dMMMMP'                
+                 '***4ML]MP***'                 
+                 .mmmdM7]Mbmmm,                 
+                 `]MMMP''4MMM7'                 
+                  ]MMP'  '4MM[                  
+                  ''^'    `^''                  
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                .u..,      ...u,                
+                '4MMbu,  .udMMP'                
+                 ]MMMMb,.dMMMM[                 
+                 `'**4ML]MP**''                 
+                  .mmdM7]Mbmm,                  
+                  ]MMMP''4MMM[                  
+                  `]P''  `'47'                  
+                   `'      `'                   
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                 .,          .,                 
+                 '\mmu,  .umm/'                 
+                  ]MMMb,.dMMM[                  
+                  '***4L]P***'                  
+                   .mmd7]bmm,                   
+                   ]MMP''4MM[                   
+                   '*''  `'*'                   
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                  .u..,  ...u,                  
+                  `]MMb,.dMM7'                  
+                   '**4L]P**'                   
+                    .md7]bm,                    
+                    ]MP''4M[                    
+                    `^'  `^'                    
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                   .,      .,                   
+                   '\mu,.um/'                   
+                    '*4L]P*'                    
+                     vd7]br                     
+                     '''`''                     
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                     ..,..,                     
+                     '*::*'                     
+                     .m[:m,                     
+                     `^'`^'                     
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                     .,  .,                     
+                     ``.,''                     
+                       '`                       
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                       .,                       
+                       `'                       
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
+                                                
