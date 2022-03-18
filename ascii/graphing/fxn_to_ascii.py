@@ -1,5 +1,47 @@
 
 from R2_to_bool import circle, parabola, heart, butterfly, image_to_function
+import re
+
+def is_covered(f, x, y):
+    """
+    much simpler version of vertex score
+    """
+    total = 0
+    total += int(f(x, y))
+    total += int(f(x + 1, y))
+    total += int(f(x, y - 1))
+    total += int(f(x + 1, y - 1))
+    total += int(f(x, y - 2))
+    total += int(f(x + 1, y - 2))
+    return total >= 3
+
+def word_art(f, textfile, width, height, x_offset, y_offset):
+    """
+    f should take x and y and output bool 
+    width: unit width of grid
+    height: unit height of grid
+    x_offset: min x as int
+    y_offset: min y as int
+    """
+
+    with open(textfile, "r") as tfile:
+        text = tfile.read()
+
+    text = re.sub(r"\t", "    ", text)
+    text = re.sub(r"\n", r"", text)
+
+    curr_char = 0
+    textlen = len(text)
+
+    for j in range(height + y_offset, y_offset, -2):
+        for i in range(x_offset, width + x_offset):
+            if is_covered(f, i, j):
+                print(text[curr_char], end="")
+                curr_char = (curr_char + 1) % textlen
+            else:
+                print(" ", end="")
+
+        print()
 
 def vertex_score(f, x, y):
     """
@@ -105,7 +147,7 @@ def function_to_ascii(f, width, height, x_offset, y_offset):
         print()
 
 def main():
-    function_to_ascii(heart, 40, 40, -20, -20)
+    word_art(heart, "hello.txt", 40, 40, -20, -20)
 
 if __name__ == "__main__":
     main()
