@@ -17,5 +17,5 @@ def turtle(turtled):
         turtles(1/20)
     return not turtled
 
-turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(not not True))))))))))))))))))))))))))))))))))))))))))))))))))))))))))))
+turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(turtle(not not True))))))))))))))))))))))))))))))))))))))))))
 turtled()
