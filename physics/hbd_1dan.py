@@ -9,8 +9,6 @@ from matplotlib import pyplot as plt
 from matplotlib import animation
 from mpl_toolkits import mplot3d
 
-mpl.use("webagg") # horrible, but prevents segfaults for now
-
 # Constants
 COLOR = (10 / 255, 243 / 255, 1)
 DIM = 5
@@ -130,6 +128,7 @@ class Simulation:
 
 # Main block
 def main():
+    mpl.use("webagg") # horrible, but prevents segfaults for now
     sim = Simulation()
     sim.animate("Swing")
 
