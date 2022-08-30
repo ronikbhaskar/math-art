@@ -1,25 +1,6 @@
-# math-art
+# Math Art
 
 An exploration of math, code, and visual art.
-
-## Fractals (WIP)
-
-The GIFs of some fractal animations can be found in:<br />
- - [https://github.com/ronikbhaskar/math-art/tree/main/fractals/images](https://github.com/ronikbhaskar/math-art/tree/main/fractals/images)
-
-I was introduced to the concept of a fractal very early on, back when I did math competitions in middle school. The math surrounding fractals is incredibly fascinating, and as I continue to explore them, I realize just how much I have yet to know. It should be noted that fractals are an incredibly broad subject, and the fractals I model are not nearly representative of how much you can do with them. In fact, all the art I'm doing is nowhere near a comprehensive view of any subject I cover. Also, yes, I know, strange attractors can be considered fractals.
-
-My process isn't the cleanest or most efficient, but that was never the goal. I'm just here to make some art.
-
-### Turtle Graphics
-
-Disclaimer: I do not recommend any experienced programmer to produce any final products using Python's `turtle` library. I simply wanted to revisit some old projects from when I was first learning Python and flesh them out a bit more. For any beginners out there, I do hope you try using the `turtle` library at some point. It's a fun introduction to graphics, basic functionality is very intuitive, and if you're resourceful, you can create almost anything you want (within reason).
-
-TODO:
- - sierpinski triangle and koch curve
- - helpers
-   - how I convert turtle animations to gifs
-   - drawing gradients
 
 ## Strange Attractors
 
