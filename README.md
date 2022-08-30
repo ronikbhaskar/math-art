@@ -64,10 +64,6 @@ Once everything has been adjusted, the `generate_animation()` method generates t
 
 ## References / Inspiration
 
-### Fractals:
-
- - My middle school math teacher for showing me the Sierpinski Triangle and the Koch Curve<br />
-
 ### Strange Attractors: 
 
  - Bernd Ulmann, "The Aizawa attractor", December 2018, https://analog-paradigm.com/downloads/alpaca_17.pdf<br />
