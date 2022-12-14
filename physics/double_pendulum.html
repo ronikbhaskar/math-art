@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Double Pendulum</title>
+    <style>
+        canvas {
+            height: 100vh;
+            width: 100vw;
+            margin: 0;
+            padding: 0;
+        }
+        body, canvas {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+</body>
+    <script defer>
+        const canvas = document.getElementById("canvas");
+        const ctx = canvas.getContext("2d");
+        canvas.width = window.innerWidth;
+        canvas.height = window.innerHeight;
+        
+        const canvas2 = document.createElement("canvas");
+        const ctx2 = canvas2.getContext("2d");
+        canvas2.width = window.innerWidth;
+        canvas2.height = window.innerHeight;
+
+        const width = canvas.width;
+        const height = canvas.height;
+        const minDim = Math.min(height, width);
+        const halfWidth = width / 2;
+        const fifthHeight = height / 5;
+        const testColor = "#FFFFFF";
+        const endColor = "#bbddff";
+        
+        ctx.strokeStyle = testColor;
+        ctx.fillStyle = endColor;
+        ctx.lineWidth = 1;
+
+        ctx2.strokeStyle = endColor;
+        ctx2.fillStyle = endColor;
+        ctx2.lineWidth = 2;
+
+        const penLen1 = minDim / 3;
+        const penLen2 = penLen1;
+        const l1 = 500;
+        const l2 = 500;
+        const m1 = 2, m2 = 2;
+        const g = 1;
+        const dt = 1;
+        var theta1 = Math.PI / 2 + (Math.random() - 0.5) / 10.0;
+        var theta2 = Math.PI / 2 + (Math.random() - 0.5) / 10.0;
+        var x1, y1, angVelPen1 = 0, angVelPen2 = 0;
+        var prevX, prevY;
+        var x2 = halfWidth + penLen1 * Math.sin(theta1) + penLen2 * Math.sin(theta2);
+        var y2 = fifthHeight + penLen1 * Math.cos(theta1) + penLen2 * Math.cos(theta2);
+
+        function draw() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+            ctx.beginPath();
+            ctx.moveTo(halfWidth, fifthHeight);
+            ctx.lineTo(x1, y1);
+            ctx.lineTo(x2, y2);
+            ctx.stroke();
+            let circles = new Path2D();
+            circles.arc(x1, y1, 4, 0, 2 * Math.PI, false);
+            circles.arc(x2, y2, 4, 0, 2 * Math.PI, false);
+            ctx.fill(circles); 
+            ctx2.beginPath();
+            ctx2.moveTo(prevX, prevY);
+            ctx2.lineTo(x2, y2);
+            ctx2.stroke();
+            ctx.drawImage(canvas2, 0, 0);
+        }
+
+        function update() {
+            prevX = x2;
+            prevY = y2;
+
+            /* fancy formulas: https://www.myphysicslab.com/pendulum/double-pendulum-en.html */
+            let dterm = (2 * m1 + m2 - m2 * Math.cos(2 * theta1 - 2 * theta2));
+            let angAccPen1 = -g * (2 * m1 + m2) * Math.sin(theta1) - m2 * g * Math.sin(theta1 - 2 * theta2) - 2 * Math.sin(theta1 - theta2) * m2 * (angVelPen2 * angVelPen2 * l2 + angVelPen1 * angVelPen1 * l1 * Math.cos(theta1 - theta2));
+            angAccPen1 /= l1 * dterm;
+            angVelPen1 += angAccPen1 * dt;
+            theta1 += angVelPen1 * dt;
+
+            let angAccPen2 = 2 * Math.sin(theta1 - theta2) * (angVelPen1 * angVelPen1 * l1 * (m1 + m2) + g * (m1 + m2) * Math.cos(theta1) + angVelPen2 * angVelPen2 * l2 * m2 * Math.cos(theta1 - theta2));
+            angAccPen2 /= l2 * dterm;
+            angVelPen2 += angAccPen2 * dt;
+            theta2 += angVelPen2 * dt;
+
+            x1 = halfWidth + penLen1 * Math.sin(theta1);
+            y1 = fifthHeight + penLen1 * Math.cos(theta1);
+            x2 = x1 + penLen2 * Math.sin(theta2);
+            y2 = y1 + penLen2 * Math.cos(theta2);
+
+            /* friction */
+            angVelPen1 *= 0.9999;
+            angVelPen2 *= 0.9999;
+        }
+
+        setInterval(() => {update(); draw();}, 30);
+        
+    </script>
+</html>
